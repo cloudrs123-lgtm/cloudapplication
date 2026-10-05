@@ -77,6 +77,6 @@ app.put("/books/:id", (req, res) => {
   });
 });
 
-app.listen(80, () => {
-  console.log("Connected to backend.");
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Backend running on port ${PORT}`);
 });
